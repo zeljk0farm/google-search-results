@@ -1,0 +1,491 @@
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html , body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+header {
+    background-color:rgba(245, 245, 245,0.5);
+    overflow:hidden;
+    
+}
+
+div.first-section {
+    position: relative;
+}
+
+/* Floating Google logo  to the left,buttons to the right and fixing logo's position */
+
+.first-section img {
+    float:left;
+    margin:22px 13px;
+}
+
+.two-buttons {
+   position: absolute;
+   right:25px;
+   top:28px;
+   margin:7px 5px 5px 5px;
+}
+
+/* Clearing floats */
+.first-section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+input[type="text"] {
+    width:605px;
+    margin:20px 10px 10px 5px;
+    border-radius: 0px;
+    padding:12px;
+    border:1px solid lightgray;
+    font-size:16px;
+    box-shadow:0px 1px 2px 0.3px rgb(202, 202, 202);
+    color:#222;
+    font-family: Arial, sans-serif;
+    text-align:left;
+    text-indent:3px;
+}
+
+
+div.first-section form i {
+    position:absolute;
+    top:35px;
+    left:750px;
+    color:#4285f4;
+}
+
+/* Styling buttons */
+
+#special-button {
+    background-color:#4285f4;
+    color:white;
+    padding:8px 13px;
+    font-weight: bold;
+    border-radius: 2px;
+    text-align: center;
+    margin-left:15px;
+}
+
+.two-buttons i {
+    color:dimgrey;
+}
+
+
+/* Adding hover effects to input text and buttons */
+
+.two-buttons i:hover {
+    color:#222;
+    cursor: pointer;
+}
+
+a#special-button:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+input[type="text"]:hover {
+
+    box-shadow:0px 1px 4px 0.3px rgb(184, 184, 184);
+
+}
+
+/* -----> END OF FIRST SECTION OF HEADER <------ */
+
+/* Styling + Positioning nav links */
+
+nav ul {
+    list-style-type: none;
+    margin: 4px 0px 15px 147px;
+    padding: 0;
+}
+
+nav ul li  {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 13px;
+    margin:10px 0px 10px 8px;
+    padding:10px;
+}
+
+/* Seperating the Settings and Tools links from the other links */
+nav ul li:nth-child(7) {
+    margin-left:110px;
+}
+
+
+#current-selected {
+    font-weight: bold;
+    color:rgb(61, 109, 243);
+    border-bottom:3px solid rgb(65, 110, 235);
+    padding:13px;
+}
+
+
+/* Hover effect */
+.second-section a:hover {
+    color:#222;
+}
+
+
+
+hr {
+    color:rgb(235, 235, 235);
+    opacity:0.3;
+    margin-bottom:15px;
+}
+
+
+/* End of <header> */
+
+
+/* MAIN SECTION */
+
+main.main-content {
+    width:50%;
+    margin-left:12%;
+    font-size:small;
+}
+
+main>p {
+    color:dimgray;
+    opacity: 0.8;
+    margin:-2px 5px 25px 12px;
+}
+
+div.info-box {
+
+    width:570px;
+    border-radius: 3px;
+    padding: 0px 25px;
+    border:1px solid lightgray;
+    font-size:16px;
+    box-shadow:0px 4px 4px 0.3px rgb(202, 202, 202);
+    color:#222;
+    height:320px;
+    position: relative;
+    margin-bottom:50px;
+    line-height:25px;
+    
+}
+
+.info-box p:nth-child(1) {
+    font-weight: bold;
+    width:65%;
+    float:left;
+    margin:20px 10px 10px -5px ;
+}
+
+.info-box img {
+    position: absolute;
+    top:0px;
+    right:0px;   
+}
+
+ol {
+    margin-top:0px;
+    margin-left:10px;
+}
+
+p.more {
+    color:dimgray;
+    opacity: 0.8;
+    font-size:14px;
+    font-weight: normal;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+a.head-link {
+    font-size:large;
+    display: block;
+    margin-top:20px;
+    margin-right:5px;
+    text-decoration: none;
+    color:blue;
+}
+
+a#small-link{
+    display: block;
+    font-size:14px;
+    color:rgb(0, 90, 0);
+    margin-top:-7px;
+    text-decoration: none;
+
+}
+
+a.head-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Search Results */
+
+a#mega-links , a.full-link , span.meta-description {
+    display:block;
+}
+
+div.search-results div {
+    margin-bottom: 25px;
+}
+
+div.search-results a#mega-links {
+    color:blue;
+    text-decoration: none;
+    font-size: large;
+}
+
+div.search-results a.full-link {
+
+    color:rgb(0, 90, 0);
+    text-decoration: none;
+    font-size: 14px;
+    margin:4px 0;
+}
+
+
+div.search-results span {
+
+    color:dimgray;
+    margin:4px 0;
+
+}
+
+
+/* Hover Effects */
+
+div.search-results a#mega-links:hover {
+    text-decoration: underline;
+}
+
+
+/* Website software styling and positioning */
+
+div.website-software {
+    width:570px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    border:1px solid lightgray;
+    font-size:16px;
+    box-shadow:0px 2px 2px 0.3px rgb(202, 202, 202);
+    color:#222;
+    height:auto;
+    position: relative;
+    margin-bottom:50px;
+    line-height:25px;
+
+}
+
+
+.related-search {
+    font-size:small;
+    color:dimgray;
+    opacity:0.8;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+div.website-software img {
+    display: inline-block;
+    width:10%;
+    overflow:hidden;
+    margin:0 10px -10px 10px;
+}
+
+div.website-software a {
+    color:blue;
+    font-size:small;
+    text-decoration: none;
+    display: inline-block;
+    margin:0px 10px 20px 10px;
+    
+}
+
+div.website-software a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling relative links */
+
+
+.other-links h3 {
+    font-size: large;
+    margin:-10px 0px 20px 0px;
+}
+
+.other-links {
+    width:570px;
+    height:200px;
+    margin-bottom:50px;
+}
+
+.other-links a {
+    display:inline-block;
+    font-size: medium;
+    color:blue;
+    text-decoration: none;
+    margin:2%;
+    width:45%;
+    
+}
+
+.other-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Goooooooooogle Section */
+
+table {
+    margin-left:150px;
+    margin-bottom:40px;
+}
+
+
+tr {
+    padding: 0;
+    border: 0;
+    margin: 0; 
+}
+
+
+td {
+    padding: 0;
+    border: 0;
+    margin: 0; 
+}
+
+.secondrow {
+    text-align: center;
+    font-size: 13px;
+}
+.secondrow tr {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.secondrow a {
+    color: rgb(48, 93, 216);
+}
+
+
+/* Location */
+
+div.current-location {
+    padding-left: 161px;
+    height:40px;
+    border:1px solid #e4e4e4;
+    background-color:rgba(223, 223, 223,0.5);
+    
+}
+
+.current-location span {
+    display: inline-block;
+}
+
+span.country {
+    padding-right:14px;
+    border-right:1px solid #e4e4e4;
+    font-size:14px;
+    color:dimgray;
+    height:20px;
+    margin-top:10px;
+}
+
+span.circle {
+    border-radius: 50%;
+    background-color:#aaa;
+    width:10px;
+    height:10px;
+    margin-left:10px;
+}
+
+span.precise-location {
+    color:dimgray;
+}
+
+.current-location a {
+    color:dimgray;
+    text-decoration: none;
+}
+
+.current-location a:hover {
+    color:black;
+}
+
+
+
+
+
+
+
+/* Footer Styling and Positioning */
+
+
+footer {
+    background-color:rgba(223, 223, 223,0.5);
+    padding:12px 5px 12px 141px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:dimgray;
+    margin-right:20px;
+
+}
+
+footer ul {
+    margin-left:22px;
+}
+
+
+footer ul li a:hover {
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
